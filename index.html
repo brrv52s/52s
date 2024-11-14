@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime testing</title>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
 
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>Koksal Anime</h1>
+    <!-- قسم البحث -->
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="ابحث عن الأنمي">
+      <button id="search-button">بحث</button>
+    </div>
+  </header>
+
+  <!-- قائمة الأنمي -->
+  <main>
+    <section id="anime-list">
+      <div class="anime-item" onclick="playEpisode('episode1.mp4')">Episode 1</div>
+      <div class="anime-item" onclick="playEpisode('episode2.mp4')">Episode 2</div>
+      <div class="anime-item" onclick="playEpisode('episode3.mp4')">Episode 3</div>
+    </section>
+
+    <!-- مشغل الحلقة -->
+    <section id="episode-player">
+      <h2>مشغل الحلقة</h2>
+      <video id="video-player" width="640" controls>
+        <source src="" type="video/mp4">
+        المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+      </video>
+      <button onclick="toggleFullScreen()">Full Screen</button>
+    </section>
+  </main>
+
+  <!-- حقوق الملكية -->
+  <footer>
+   • Developed by : .52s
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

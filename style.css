@@ -1,1 +1,134 @@
+/* تنسيق الجسم */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('path/to/Koksal-anime-background.jpg'); /* ضع هنا رابط الخلفية */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
 
+/* تنسيق رأس الصفحة */
+header {
+  background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 90%);
+  padding: 15px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* تنسيق قسم البحث */
+#search-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* تنسيق مربع البحث */
+#search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+#search-input:focus {
+  border-color: #2580B3;
+  outline: none;
+}
+
+/* تنسيق زر البحث */
+#search-button {
+  padding: 10px 15px;
+  background-color: #2580B3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #CBBACC;
+}
+
+/* تنسيق قائمة الأنمي */
+#anime-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* تنسيق الحلقات */
+.anime-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.anime-item:hover {
+  background-color: #2580B3;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* تنسيق مشغل الحلقة */
+#episode-player {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#video-player {
+  width: 100%;
+  max-width: 640px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* تنسيق حقوق الملكية */
+footer {
+  margin-top: auto; /* يضع الـ footer في الأسفل */
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5rem; /* تكبير حجم النص */
+  color: white;
+  background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 90%); /* نفس تدرج الخلفية الخاص بـ header */
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-weight: 600; /* جعل الخط ثقيل */
+  text-transform: uppercase;
+} 

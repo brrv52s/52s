@@ -1,17 +1,15 @@
-/* تنسيق الجسم */
 body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('path/to/Koksal-anime-background.jpg'); /* ضع هنا رابط الخلفية */
+  background-image: url('path/to/Koksal-anime-background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
 }
 
-/* تنسيق رأس الصفحة */
 header {
   background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 90%);
   padding: 15px;
@@ -22,7 +20,6 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* تنسيق قسم البحث */
 #search-container {
   margin-top: 40px;
   display: flex;
@@ -36,7 +33,6 @@ header {
   box-sizing: border-box;
 }
 
-/* تنسيق مربع البحث */
 #search-input {
   width: 300px;
   padding: 10px;
@@ -52,7 +48,6 @@ header {
   outline: none;
 }
 
-/* تنسيق زر البحث */
 #search-button {
   padding: 10px 15px;
   background-color: #2580B3;
@@ -68,7 +63,6 @@ header {
   background-color: #CBBACC;
 }
 
-/* تنسيق قائمة الأنمي */
 #anime-list {
   display: flex;
   gap: 15px;
@@ -77,7 +71,6 @@ header {
   justify-content: center;
 }
 
-/* تنسيق الحلقات */
 .anime-item {
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -97,7 +90,6 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* تنسيق مشغل الحلقة */
 #episode-player {
   margin-top: 20px;
   text-align: center;
@@ -116,19 +108,18 @@ header {
   border-radius: 8px;
 }
 
-/* تنسيق حقوق الملكية */
 footer {
-  margin-top: auto; /* يضع الـ footer في الأسفل */
+  margin-top: auto;
   padding: 20px 0;
   text-align: center;
-  font-size: 1.5rem; /* تكبير حجم النص */
+  font-size: 1.5rem;
   color: white;
-  background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 90%); /* نفس تدرج الخلفية الخاص بـ header */
+  background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 90%);
   width: 100%;
 }
 
 footer p {
   margin: 0;
-  font-weight: 600; /* جعل الخط ثقيل */
+  font-weight: 600;
   text-transform: uppercase;
-} 
+}

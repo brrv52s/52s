@@ -1,1 +1,1 @@
-Project Anime Website Small..
+Project Anime Website Small 
